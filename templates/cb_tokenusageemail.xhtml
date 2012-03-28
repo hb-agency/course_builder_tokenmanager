@@ -1,0 +1,10 @@
+<p>Course: <?php echo $this->course_name; ?></p>
+<p>Date: <?php echo $this->token_date; ?></p>
+<p>Token: <?php echo $this->token; ?></p>
+<p>Credits Remaining: <?php echo $this->credits_remaining; ?></p>
+<p></p>
+<p>User: <?php echo $this->child_firstname . ' ' . $this->child_lastname; ?></p>
+<?php if (strlen($this->child_company)): ?><p>Company: <?php echo $this->child_company; ?></p><?php endif; ?>
+<?php if (strlen($this->child_email)): ?><p>Email: <?php echo $this->child_email; ?></p><?php endif; ?>
+<?php if (strlen($this->child_phone)): ?><p>Phone: <?php echo $this->child_phone; ?></p><?php endif; ?>
+<?php if (strlen($this->child_address)): ?><p>Address: <?php echo $this->child_address; ?></p><?php endif; ?>
